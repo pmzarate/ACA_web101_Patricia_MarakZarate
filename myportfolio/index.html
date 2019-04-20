@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="tablet-style.css">
-    <title>My Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" media="(max-width: 800px)" href="my800wide-style.css" />
+   <link rel="stylesheet" media="(max-width: 400px)" href="my400wide-style.css" />
+  <title>My Portfolio</title>
 </head>
   <body>
      <div class="container">
@@ -15,17 +17,17 @@
                   <a href="/C:/Users/User/Desktop/devfolder/ACA_web101_Patricia_MarakZarate/src/blog/blog.html">My Blog</a> 
                   <a href="aboutme">About Me</a> 
                   <a class="has-border">Contact Me</a>
-          </nav>
+         </nav>
         </header>
-    <main class="headshot">
+    <main>
+      <div class="myprofilepic">
         <img src="./myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">
+       </div>
         <h1>Patricia Marak-Zarate</h1>
-        <h2>Student of Web Developement</h2>
-  
+      <h2>Student of Web Developement</h2>
         <button id="portfolio">Portfolio</button>
          <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
     </main>
-  
-     </div>
+  </div>
   </body>
 </html>
