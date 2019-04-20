@@ -1,0 +1,27 @@
+body {
+	margin: 0 auto;
+	width: 850px;
+	font-family: "Play", sans-serif;
+	padding: 10px;
+}
+main {
+	width: 850px;
+	height: 450px;
+	background-image: url(/Andromeda_Galaxy.jpg);
+	color: white;
+	padding-bottom: 20px;
+}
+section {
+	display: flex;
+	height: 324px;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 15px;
+}
+article {
+	width: 270px;
+	height: 324;
+	background-color: lightslategray;
+	padding: 25px;
+	text-align: left;
+}
