@@ -5,22 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" media="(max-width: 400px)" href="my400wide-style.css" />
+  <link rel="stylesheet" media="(max-width: 800px)" href="my800wide-style.css" />
   <title>My Portfolio</title>
 </head>
   <body>
+     <div class="container">
         <header><img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo"></header>!-- REPLACE THIS LINE WITH THE IMG TAG, STEP 8 -->
-          <nav>Resume</nav>
-          <nav>About Me</nav> 
-          <nav>My Blog</nav>
+          <div class="navigation">
+            <nav>Resume</nav>
+            <nav>About Me</nav> 
+            <nav>My Blog</nav>
             <a class="has-border">Contact Me</a>
+          </div>
         </header>
     <main>
+      <div class="myprofilepic">
         <img src="./myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">
-  
-        <button id="portfolio">Portfolio</button>
+          <h2>Patricia Marak-Zarate</h2>
+          <h3><em>Student of Web Development</em></h3>
+      </div>
+       <div class="portfolio">
+         <button id="portfolio">Portfolio</button>
+       </div>
+        <div class=aca>
          <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+        </div>
     </main>
-  
-  
+    </div>
   </body>
 </html>
