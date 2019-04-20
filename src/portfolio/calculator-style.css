@@ -1,0 +1,21 @@
+.flex-container {
+	height: 400px;
+	width: 300px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	background-color: lightpink;
+}
+
+.flex-container > div {
+	background-color: #f1f1f1;
+	height: 50px;
+	margin: 10px;
+	align-content: space-around;
+	text-align: center;
+	line-height: 40px;
+	font-size: 70px;
+	padding: 5px;
+}
+.screen {
+	border-inline-end-width: 300px;
+}
