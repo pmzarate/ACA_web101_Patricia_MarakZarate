@@ -1,0 +1,61 @@
+body {
+	width: 1000px;
+	font-family: "Pacifico", cursive;
+	background-image: url("abstract-art-background-1227511.jpg");
+	background-repeat: no-repeat;
+	background-size: auto auto;
+}
+.greybox {
+	border: 2px solid black;
+	background-color: lightgrey;
+	padding: 5px;
+	box-sizing: content-box;
+}
+.container {
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat (5, 20%);
+	grid-template-rows: repeat (5, 20%);
+	grid-template-areas:
+		"welcome welcome . date date"
+		"welcome welcome . date date"
+		"calculator calculator . todolist todolist"
+		"calculator calculator . todolist todolist"
+		". clock clock clock .";
+}
+#welcome {
+	grid-area: welcome;
+	font-size: 50px;
+}
+#date {
+	grid-area: date;
+}
+#calculator {
+	grid-area: calculator;
+}
+#todolist {
+	grid-area: todolist;
+}
+#clock {
+	grid-area: clock;
+}
+@media (max-width: 800px) {
+	.container {
+		grid-template-areas:
+			"welcome welcome . date date"
+			"welcome welcome . date date"
+			"calculator calculator . todolist todolist"
+			"calculator calculator . todolist todolist"
+			". clock clock clock .";
+	}
+}
+@media (max-width: 400px) {
+	.container {
+		grid-template-areas:
+			"welcome"
+			"date"
+			"todolist"
+			"clock"
+			"calculator";
+	}
+}
