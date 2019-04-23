@@ -4,63 +4,58 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="stylesheet" href="dashboard-style.css" />
-		<title>Dashboard</title>
+    <link rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Pacifico"/>
+    <link rel="stylesheet" href="dashboard-style.css" />
+     <title>Dashboard</title>
 	</head>
 	<body>
 		<div class="container">
 			<header>
-				<div class="welcome">Welcome to a New Day!</div>
+        <div class="greybox" id="welcome">Good Morning Sunshine!</div>
 			</header>
-			<main>
-				<div class="date">Today is: Friday, March 22, 2021</div>
-
-				<div class="todolist">
-					Gitter Done List
-					<ul>
-						Add it to the List:
-						<input type="text" name="screen" id="screen" />
-						<li><a href="text">Clean Out Grease Trap</a></li>
-						<li><a href="text">Chop Wood</a></li>
-						<li><a href="text">Excavate for Fallout Shelter</a></li>
-						<li><a href="text">Go to Spa</a></li>
-						<li><a href="text">Get Manicure/ Pedicure</a></li>
-						<li><a href="text">Love and Hug Children</a></li>
-					</ul>
-				</div>
-			</main>
-			<aside>
-				<div id="calculator">
-					<form id="calculator">
-						<input type="text" name="screen" id="screen" />
-						<br />
-						<button type="7">7</button>
-						<button type="8">8</button>
-						<button type="9">9</button>
-						<button type="*">*</button>
-						<br />
-						<button type="4">4</button>
-						<button type="5">5</button>
-						<button type="6">6</button>
-						<button type="/">/</button>
-						<br />
-						<button type="1">1</button>
-						<button type="2">2</button>
-						<button type="3">3</button>
-						<button type="-">-</button>
-						<br />
-						<button type="0">0</button>
-						<button type="+">+</button>
-						<button type="=">=</button>
-						<button type="Clear">C</button>
-					</form>
-				</div>
-			</aside>
-			<footer>
-				<div id="clock">
-					<h2>You Got the Time? 12:34 pm</h2>
-				</div>
-			</footer>
+			<div class="greybox" id="date">Today is: Friday, March 22, 2021</div>
+			<div class="greybox" id="todolist">
+				<h2>Gitter Done List</h2>
+				<ul>
+					Add it to the List:
+					<input type="text" name="screen" id="screen" />
+					<li><a href="text">Clean Out Grease Trap</a></li>
+					<li><a href="text">Chop Wood</a></li>
+					<li><a href="text">Excavate for Fallout Shelter</a></li>
+					<li><a href="text">Go to Spa</a></li>
+					<li><a href="text">Get Manicure/ Pedicure</a></li>
+					<li><a href="text">Love and Hug Children</a></li>
+				</ul>
+			</div>
+			<div class="greybox" id="calculator">
+				<form>
+					<input type="text" name="screen" id="screen" />
+					<br />
+					<button type="7">7</button>
+					<button type="8">8</button>
+					<button type="9">9</button>
+					<button type="*">*</button>
+					<br />
+					<button type="4">4</button>
+					<button type="5">5</button>
+					<button type="6">6</button>
+					<button type="/">/</button>
+					<br />
+					<button type="1">1</button>
+					<button type="2">2</button>
+					<button type="3">3</button>
+					<button type="-">-</button>
+					<br />
+					<button type="0">0</button>
+					<button type="+">+</button>
+					<button type="=">=</button>
+					<button type="Clear">C</button>
+				</form>
+			</div>
+			<div class="greybox" id="clock">
+				<h2>You Got the Time? 12:34 pm</h2>
+			</div>
 		</div>
 	</body>
 </html>
