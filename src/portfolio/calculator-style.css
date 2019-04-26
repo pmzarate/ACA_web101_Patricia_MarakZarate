@@ -4,6 +4,7 @@
 	display: flex;
 	flex-wrap: wrap-reverse;
 	background-color: lightpink;
+	justify-content: space-evenly;
 }
 
 .flex-container > div {
@@ -19,4 +20,7 @@
 }
 .screen {
 	border-inline-end-width: 300px;
+}
+#screen {
+	padding-bottom: -10px;
 }
