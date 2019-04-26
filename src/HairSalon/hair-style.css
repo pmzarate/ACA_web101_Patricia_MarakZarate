@@ -1,0 +1,71 @@
+body {
+	width: 1400px;
+	height: auto;
+	font-family: "Merienda", cursive;
+	background-color: white;
+	padding: 20px 20px 20px 20px;
+}
+#header {
+	margin: 40px auto;
+	padding: 44px 0 44px;
+	text-align: center;
+	width: 960px;
+	font-size: 30px;
+}
+
+#navigation {
+	display: flex;
+	float: center;
+	justify-content: space-evenly;
+	list-style: none;
+	margin: 0;
+	padding: 20px 19px;
+	text-align: justify;
+	color: black;
+}
+main {
+	display: block;
+	box-lines: 20px;
+	text-align: left 20px white;
+	border-image-width: 1400px;
+	background-image: url(/);
+}
+.beacontext {
+	display: block;
+	text-align: left;
+}
+section {
+	display: flex;
+	width: 1400px;
+	height: 324px;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-top: 15px;
+	text-align: center;
+	border: 2px black;
+}
+footer {
+	background-color: black;
+	width: 1400px;
+	height: 70px;
+	text-decoration-color: white;
+	padding-top: 10px;
+	padding: 50px;
+	padding-left: 10px;
+}
+#rights {
+	float: left;
+	color: white;
+	text-align: justify;
+	margin-left: 10px;
+}
+#icons {
+	display: flex;
+	flex-direction: row;
+	float: right;
+	justify-content: space-evenly;
+	list-style: none;
+	margin-right: 20px;
+	padding: 20px 19px;
+	text-align: justify;
+}
