@@ -1,6 +1,6 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-image: url("opensky.jpg");
+	background-image: url("/Images/opensky.jpg");
 	background-repeat: no-repeat;
 	background-size: 1600px 1600px;
 	width: 1000px;
@@ -90,5 +90,4 @@ button {
 	display: grid;
 	grid-template-columns: repeat (4, 25%);
 	grid-template-rows: repeat (4, 25%);
-	grid-area: "";
 }

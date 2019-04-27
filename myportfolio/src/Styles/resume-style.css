@@ -1,16 +1,35 @@
-body {width: 1000x;
+body {
+    width: 1000x;
     margin-left: 260px;
     font-family: "Lato", sans-serif;
     margin-right: 100px;
-  }
-  header {color: navy;
-background-color: lightgrey;
-border-width: 25px; }
-h2 { color: indigo;}
-  main {margin-left: 230px;}
-  .sidenav {
+    font-family: 'Acme', sans-serif;
+}
+header {  
+    color: navy;
+    background-color: lightgrey;
+    border-width: 25px;
+    height: 80px;
+    text-align: center;
+}
+h1 {
+    font-size: 60px;
+    font: bold;
+}
+h2 { 
+    color: indigo;
+    font-size: 30px;
+    font-style: italic;
+    font: larger;
+    text-decoration: underline;
+
+}
+p {
+  font-size: 25px;
+}
+.sidenav {
     height: 500%;
-    width: 220px;
+    width: 225px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -18,28 +37,26 @@ h2 { color: indigo;}
     background-color: lightgrey;
     overflow-x: hidden;
     padding-top: 20px;
-    padding-left: 10px;
-  }
-  
-  .sidenav a {
+    padding-left: 5px;
+}
+.sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: black;
     display: block;
+}
+.sidenav a:hover {
+    color: yellow;
   }
   
-  .sidenav a:hover {
-    color: pink;
-  }
-  
-  .main {
+.main {
     margin-left: 160px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
   }
   
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
