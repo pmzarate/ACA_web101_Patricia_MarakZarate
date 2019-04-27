@@ -7,9 +7,13 @@ body {
 main {
 	width: 850px;
 	height: 450px;
-	background-image: url(Andromeda_Galaxy.jpg);
+	background-image: url(/Images/Andromeda_Galaxy.jpg);
 	color: white;
 	padding-bottom: 20px;
+	text-align: center;
+	font-size: 40px;
+
+
 }
 section {
 	display: flex;
