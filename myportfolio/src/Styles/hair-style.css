@@ -4,6 +4,7 @@ body {
 	font-family: "Merienda", cursive;
 	background-color: white;
 	padding: 20px 20px 20px 20px;
+	margin: 0 auto;
 }
 #header {
 	margin: 40px auto;
@@ -25,14 +26,51 @@ body {
 }
 main {
 	display: block;
+	height: 500px;
 	box-lines: 20px;
 	text-align: left 20px white;
-	border-image-width: 1400px;
-	background-image: url(/);
+	border-image-width: 1000px;
+	background-image: url(../Images/the-beacon.jpg);
+	margin-bottom: 40px;
 }
 .beacontext {
+	position: absolute;
+	top: 355px;
+	right: 90px;
+	text-align: justify;
+	grid-column: auto;
+	width: 500px;
+	height: 500px;
+	display: grid;
+	box-sizing: border-box;
+	text-align: left
+}
+h2 {
 	display: block;
+	align-content: inherit;
+	place-content: center;
+	background-color: white;
+	padding-top:30px;
+	margin: 5px 5px 5px 5px;
+	text-align: center;
+	font-size: 25px;
+}
+span {
+	color: white;
+	background-color: black;
+	box-sizing: auto;
+	padding-top: 20px;
+    padding-left: 20px;
 	text-align: left;
+	font-size: 18px;
+	margin: 5px 2px 2px 2px;
+	justify-content: left
+}
+#more {
+	background-color: green;
+	color: white;
+	font-size: 15px;
+	width: 130px;
 }
 section {
 	display: flex;
@@ -42,6 +80,7 @@ section {
 	justify-content: space-evenly;
 	padding-top: 15px;
 	text-align: center;
+	margin-top: 40px;
 }
 footer {
 	background-color: black;
