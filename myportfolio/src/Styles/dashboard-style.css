@@ -1,7 +1,7 @@
 body {
 	width: 1000px;
 	font-family: "Pacifico", cursive;
-	background-image: url("/Images/abstract-art-background-1227511.jpg");
+	background-image: url("../Images/abstract-art-background-1227511.jpg");
 	background-repeat: no-repeat;
 	background-size: auto auto;
 }
