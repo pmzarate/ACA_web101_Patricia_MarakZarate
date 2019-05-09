@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" href="./Styles/reset.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 		<link rel="stylesheet" href="./Styles/style.CSS" />
 		<link rel="stylesheet" href="./Styles/tablet-style.css" />
 		<link rel="stylesheet" media="(max-width: 400px)" href="./Styles/mobile-style.css" />
@@ -14,30 +15,33 @@
 		<div class="container">
 			<img
 				src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"
-				class="logo"
+				class="logo" id="logo"
 				alt="austin coding academy logo"
 			/>
-			<nav id="navigation">
-				<a href="./resume.html">Resume</a>
-				<a href="https://medium.com/@patriciamarakzarate">My Blog</a>
-				<a href="aboutme">About Me</a>
-				<a class="has-border">Contact Me</a>
+			<div class="satellite">
+				<a href="../src/Images/satellite.svg" class="animated rubberBand slow"></a>
+			</div>
+			<nav id="navigation" class="navigation">
+				<a href="../src/resume.html" class="animated slideInLeft -5">Resume</a>
+				<a href="https://medium.com/@patriciamarakzarate" class="animated slideInDown -6">My Blog</a>
+				<a href="aboutme" class="animated slideInUp -3">About Me</a>
+				<a href="../src/contactMe.html" class="animated slideInRight -5">Contact Me</a>
 			</nav>
-			<div id="myprofilepic">
-				<img src="./Images/bluebonnetAKAmyPROFILEpic.jpg" id="profile-pic" alt="Head shot of Me" />
+			<div class="myprofilepic">
+				<img src="./Images/bluebonnetAKAmyPROFILEpic.jpg" id="profile-pic" alt="Head shot of Me" class="animated fadeIn -8"/>
 			</div>
 			<div id="name">
-				<h1>Patricia Marak-Zarate</h1>
+				<h1 class="animated rubberBand delay 6">Patricia Marak-Zarate</h1>
 				<h2>Student of Web Developement</h2>
-				<a href="/portfolio.html"
-					><button id="portfolio">
-						Portfolio
-					</button></a
-				>
+					<a href="../src/portfolio.html" id="portfolio"><button>Portfolio</button></a>
 				<a class="small-text" href="https://austincodingacademy.com/"
 					>© Austin Coding Academy</a
 				>
 			</div>
+			
 		</div>
 	</body>
 </html>
+<!-----!!><button id="portfolio" href="../src/portfolio.html">
+	Portfolio
+</button><----!!>
