@@ -5,16 +5,16 @@ body {
 	background-size: 1600px 1600px;
 	width: 1000px;
 	height: 1000px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 100px;
+	margin-right: auto;
 }
 .container {
 	display: grid;
 	margin: 15%;
 }
-.logo {
+#logo {
 	width: 150px;
-	height: 100px;
+	height: 90px;
 	margin: 3% 10%;
 }
 
@@ -99,34 +99,32 @@ button {
 	letter-spacing: 16px;
 	font-style: italic;
 }
+
 @media (max-width: 800px) {
-	.container {
+	html {
 		background-image: url(../Images/opensky.jpg);
 		display: grid;
-		grid-template-columns: 1fr, 1fr);
+		grid-template-columns: 1fr, 1fr;
 		grid-template-rows: repeat (4, 1fr);
-		grid-template-areas: 
-		  "profile-pic    .       name" 
-		  "navigation navigation navigation"
-		  "portfolio   portfolio  portfolio"
-		  "  logo          .          .";
+		grid-template-areas:
+			"profile-pic    .       name"
+			"navigation navigation navigation"
+			"portfolio   portfolio  portfolio"
+			"  logo          .          .";
 	}
 }
- 
-}
 @media (max-width: 400px) {
-	.container {
+	html {
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: repeat (5 20%;
-		grid-template-areas: 
-		  "profile-pic"
-		  "name" 
-		  "navigation"
-		  "portfolio"
-		  "logo";
-		  grid-gap: 1rem;
-		  min-height: 100vh;
-		}
+		grid-template-rows: repeat (5 20%);
+		grid-template-areas:
+			"profile-pic"
+			"name"
+			"navigation"
+			"portfolio"
+			"logo";
+		grid-gap: 1rem;
+		min-height: 100vh;
+	}
 }
-	
