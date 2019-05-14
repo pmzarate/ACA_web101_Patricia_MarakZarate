@@ -2,24 +2,42 @@ body {
 	width: 1200px;
 	height: 1200px;
 	font-family: "Kalam", cursive;
-	background-color: blue;
+	background-color: lightblue;
 }
 header {
 	width: 1000px;
 	height: 200px;
 	margin-left: 30px;
+	margin-top: 40px;
 }
-.photo {
+/*.photo {
 	width: 400px;
 	height: 350px;
-	background: url("/Images/B&WColorATXpic2.jpg") no-repeat;
+	background: url("../Images/B&WColorATXpic2.jpg") no-repeat;
 	margin: 50px;
 }
 .photo:hover {
-	background: url("/Images/brightColorATXpic2.jpg") no-repeat;
+	background: url("../Images/brightColorATXpic2.jpg") no-repeat;
+}*/
+.photo {
+	width: 500px;
+	height: 400px;
+	position: relative;
+	display: inline-block;
+	margin: 50px;
+}
+.photo .ColorATX {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.photo:hover .ColorATX {
+	display: inline;
 }
 .sidenav {
-    box-sizing: border-box;
-    margin-left: 30px;
-    width: 100px;
+	box-sizing: border-box;
+	margin-left: 30px;
+	width: 100px;
 }
