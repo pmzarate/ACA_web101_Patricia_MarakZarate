@@ -1,4 +1,25 @@
 body {
-    background-color:black;
-    font: 
+	width: 1200px;
+	height: 1200px;
+	font-family: "Kalam", cursive;
+	background-color: blue;
+}
+header {
+	width: 1000px;
+	height: 200px;
+	margin-left: 30px;
+}
+.photo {
+	width: 400px;
+	height: 350px;
+	background: url("/Images/B&WColorATXpic2.jpg") no-repeat;
+	margin: 50px;
+}
+.photo:hover {
+	background: url("/Images/brightColorATXpic2.jpg") no-repeat;
+}
+.sidenav {
+    box-sizing: border-box;
+    margin-left: 30px;
+    width: 100px;
 }
