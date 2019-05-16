@@ -20,9 +20,12 @@ header {
 section {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	text-align: center;
- 	margin-top: 90px;
+	margin-top: 50px;
+	margin-right: 30px;
+	padding-bottom: 20px;
 }
 h1 {
 	font-size: 100px;
@@ -32,16 +35,15 @@ h2 {
 }
 .project-image {
     border-radius: 50%;
-	  overflow: hidden;
+	overflow: hidden;
     border: 2px solid #000;
     vertical-align: center;
-    width: 210px;
-    height: 210px;
-    margin-right: .5em;
-   	margin-bottom: .3em;
+    width: 215px;
+    height: 215px;
+
 }	
 .project-name {
-	font-size: 40px;
+	font-size: 30px;
 	color: #999;
 	font-family: 'Shadows Into Light', cursive;
 }
