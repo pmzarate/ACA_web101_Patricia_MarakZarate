@@ -1,0 +1,31 @@
+body {
+    width:1200px;
+    height: 1200px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: pink;
+    width: 700px;
+    height:700px;  
+}  
+.item {
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    font-size: 150px;
+    text-align: center;
+    padding-top: 30px;
+}  
+.box {
+    border-bottom: none;
+    border-right: none;
+}
+.choose {
+    display: grid;
+    grid-row: column;
+    width: 80px;
+    height: 30px;
+    float: right;
+}
