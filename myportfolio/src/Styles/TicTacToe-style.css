@@ -6,26 +6,30 @@ body {
 
 }
 .item {
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
-    border-radius: 10%;
     font-size: 150px;
     text-align: center;  
 }  
+.rightB {
+    border-right: 5px solid black;
+}
+.bottomB {
+    border-bottom: 5px solid black;
+}
 .box {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: pink;
-    width: 590px;
-    height:590px;  
+    width: 600px;
+    height:600px;  
     border-radius: 5%;
     margin-top:70px;
     border-bottom: none;
     border-right: none;
 }  
-.choose > #player {   
-    margin: 50px;
-    width: 100px;
-    padding: 10px;
-    font-size:80px;
+
+#player {   
+   padding:100px;
+   display: grid;
+   width: 250px;
+   justify-content: center;
 }    

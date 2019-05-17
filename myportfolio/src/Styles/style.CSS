@@ -1,5 +1,5 @@
 body {
-	margin-top: 50px;
+	margin-top: 30px;
 	font-family: Arial, Helvetica, sans-serif;
 	background-image: url("../Images/opensky.jpg");
 	background-repeat: no-repeat;
@@ -18,7 +18,7 @@ nav > a {
 	font-size: 20px;
 	border-radius: 25px;
 	background: lightgray;
-	padding: 20px;
+	padding: 10px;
 	text-align: center;
 	border: 2px solid darkgrey;
 }
@@ -48,7 +48,7 @@ h1 {
 	border-bottom: 2px solid #1940a9;
 	font: 40px bold;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 h2 {
 	color: navy;
@@ -90,11 +90,86 @@ button {
 	font-size: 18px;
 	border-radius: 25px;
 	background: transparent;
-	padding: 35px;
+	padding: 25px;
 	text-align: center;
 	color: navy;
 	letter-spacing: 16px;
 	font-style: italic;
+}
+.ufo {
+    text-align: center;
+}
+.ufo span {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+	margin: -280px 40px 54px  -34px;
+
+    background: blue;
+	background:url("ufo.png");
+    
+    -webkit-animation: ufo 10s infinite  linear;
+    -moz-animation: ufo 10s infinite  linear;
+}
+.ufo span:nth-child(5n+5) {
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+}
+.ufo span:nth-child(3n+10) {
+
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+}
+.ufo span:nth-child(3n+7) {
+
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+}
+@-webkit-keyframes ufo {
+  0% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+
+	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+
+	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+
+	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
+}
+@-moz-keyframes ufo {
+  0% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    
+	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+   
+	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    
+	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
 }
 
 @media (max-width: 900px) {
@@ -102,17 +177,23 @@ button {
 		background-image: url(../Images/opensky.jpg);
 		display: grid;
 		grid-auto-columns: 50% 50%;
+		margin-left: auto;
 	}
 	.container-profilepic {
 		display: flex;
 		padding-right: 400px;
 	}
-
+    #name {
+	    width: 150px;
+	    padding-left: 90px;
+     	padding-bottom: 40px;
+    	margin-top: 40px;
+    }
 	h1 {
 		color: navy;
 		margin: 3% auto;
 		border-bottom: 2px solid #1940a9;
-		font: 25px bold;
+		font: 27px bold;
 		text-align: center;
 	}
 	h2 {
@@ -149,16 +230,20 @@ button {
 	}
 	button {
 		width: 160px;
-		height: 20px;
-		margin-right: 200px;
+		height: 25px;
+		margin-top: 50px;
+		margin-left: -120px;
+		padding-bottom: 30px;
+		
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 18px bold;
+		font-size: 16px bold;
 		border-radius: 25px;
 		background: transparent;
 		text-align: center;
 		color: navy;
 		letter-spacing: 2px;
 		font-style: italic;
+		
 	}
 	#logo {
 		width: 100px;
@@ -175,60 +260,40 @@ button {
 	}
 }
 
-@media (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 480px) {
 	body {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(5, 1fr);
-		grid-template-areas:
-			"profile-pic"
-			"name"
-			"portfolio"
-			"nav-container"
-			"logo";
+		background-image: url(../Images/opensky.jpg);
 	}
-	.myprofilepic {
-		display: grid;
-		justify-content: left;
-		margin-left: 30px;
-		float: left;
-	}
-	#profile-pic {
-		grid-area: "profile-pic";
-		width: 100px;
-		height: 200px;
-		border-radius: 25%;
-	}
-	#name {
-		width: 300px;
-		float: left;
-	}
+	#profile-pic {}
+		
+    #name {
+		
+    }
 	h1 {
-		width: 200px;
 		color: navy;
-
+		margin: 3% auto;
 		border-bottom: 2px solid #1940a9;
-		font: px;
+		font: 27px bold;
+		text-align: center;
 	}
 	h2 {
 		color: navy;
-
+		margin: 3% auto;
 		font-size: 18px;
 		font-style: italic;
 		text-align: center;
 	}
 
+	
 	nav {
-		align-items: center;
-		flex-direction: row;
-		margin-top: 120px;
+		
 	}
 	nav > a {
 		margin: 0.5% 1% 3%;
 		width: 20%;
 		color: navy;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 8px bold;
+		font-size: 6px bold;
 		border-radius: 25px;
 		background: lightgray;
 		padding: 10px;
@@ -237,16 +302,19 @@ button {
 	}
 	button {
 		width: 160px;
-		height: 20px;
-		margin-right: 200px;
+		height: 25px;
+		margin-top: 50px;
+		margin-left: -120px;
+		padding-bottom: 30px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 18px bold;
+		font-size: 16px bold;
 		border-radius: 25px;
 		background: transparent;
 		text-align: center;
 		color: navy;
 		letter-spacing: 2px;
 		font-style: italic;
+		
 	}
 	#logo {
 		width: 100px;
@@ -262,3 +330,4 @@ button {
 		margin-left: 99px;
 	}
 }
+	
