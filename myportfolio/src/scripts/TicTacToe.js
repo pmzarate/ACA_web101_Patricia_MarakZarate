@@ -1,21 +1,32 @@
-var gameMarker = "X"
+var gameMarker
 
-var gameMarker = "0"
+// document.getElementById("box1").addEventListener("click",placeMark)
+
+// document.getElementById("box2").addEventListener("click",placeMark)
+
+// document.getElementById("box3").addEventListener("click",placeMark)
+
+// document.getElementById("box4").addEventListener("click",placeMark)
+
+// document.getElementById("box5").addEventListener("click",placeMark)
+
+// document.getElementById("box6").addEventListener("click",placeMark)
 
 
-
-.innerHTML()
+// .innerHTML()
+document.getElementsByClassName("item").addEventListener("click",placeMark)
 
 function changeMarkerToX() {
-    var gameMarker = "X"
+    gameMarker = "X"
     console.log ("click")
 }
 
 function changeMarkerToO(){
-    var gameMarker = "0"
+    gameMarker = "0"
     console.log ("click")
 }
 
-function placeMark(){ }
+function placeMark(){ 
+    console.log ("you did it")
+}
 
-gameMarker.addEventListener("click", myScript);

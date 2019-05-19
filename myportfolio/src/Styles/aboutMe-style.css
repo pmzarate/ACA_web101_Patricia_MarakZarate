@@ -2,42 +2,85 @@ body {
 	width: 1200px;
 	height: 1200px;
 	font-family: "Kalam", cursive;
-	background-color: lightblue;
+	margin-left: 20px;
 }
 header {
 	width: 1000px;
-	height: 200px;
-	margin-left: 30px;
-	margin-top: 40px;
+	height: 100px;
+	text-align: center;
+	margin-left: 80px;
+	align-content: flex-end;
+	margin-top: -80px;
+	padding-bottom: 100px;
 }
-/*.photo {
-	width: 400px;
-	height: 350px;
-	background: url("../Images/B&WColorATXpic2.jpg") no-repeat;
-	margin: 50px;
+header > h1 {
+	font-size: 175px;
+	font-family: "Satisfy", cursive;
+	transform: rotate(-15deg);
+	position: relative;
+	margin-bottom: 190px;
+	margin-left: 140px;
+}
+header > h3 {
+	padding-top: 50px;
+	font-size: 90px;
+	font-family: "Acme", sans-serif;
+}
+.photo {
+	z-index: auto;
+	position: relative;
+	width: 600px;
+	height: 440px;
+	background: url("../Images/ATXredo.png") no-repeat;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	background-size: 100%;
+	margin: 60px;
+	-ms-transform: skewY(170deg); /* IE 9 */
+	-webkit-transform: skewY(170deg); /* Safari 3-8 */
+	transform: skewY(170deg);
+	transform: rotate(5deg);
+	float: right;
+	margin-left: 90px;
+	margin-right: -80px;
 }
 .photo:hover {
-	background: url("../Images/brightColorATXpic2.jpg") no-repeat;
-}*/
-.photo {
-	width: 500px;
-	height: 400px;
+	background: url("../Images/ATXredo.png") no-repeat;
+	-webkit-filter: brightness(150%); /* Safari */
+	filter: brightness(150%);
+	background-size: 100%;
+}
+.mission {
 	position: relative;
-	display: inline-block;
-	margin: 50px;
+	display: flex;
+	flex-direction: column;
+	float: left;
+	text-align: center;
+	margin-right: 50px;
+	margin-left: 60px;
+	margin-top: -30px;
 }
-.photo .ColorATX {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 99;
+h1 {
+	font-size: 70px;
+	text-align: justify;
+	margin-left: 70px;
 }
-.photo:hover .ColorATX {
-	display: inline;
+.mission > p {
+	font-size: 30px;
+	width: 700px;
+	height: 300px;
 }
 .sidenav {
-	box-sizing: border-box;
+	padding-top: 10px;
+	background-color: silver;
+	font-size: 25px;
+	width: 300px;
+	height: auto;
 	margin-left: 30px;
-	width: 100px;
+	float: right;
+}
+.sidenav > h4 {
+	box-align: right;
+	text-align: right;
+	justify-content: center;
 }

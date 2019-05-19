@@ -58,7 +58,6 @@ h2 {
 	text-align: center;
 	padding-top: 10px;
 }
-
 #logo {
 	grid-area: "logo";
 	display: flex;
@@ -96,81 +95,79 @@ button {
 	letter-spacing: 16px;
 	font-style: italic;
 }
-.ufo {
-    text-align: center;
+/*.ufo {
+	text-align: center;
 }
-.ufo span {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-	margin: -280px 40px 54px  -34px;
+.ufo > span {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: -280px 40px 54px -34px;
 
-    background: blue;
-	background:url("ufo.png");
-    
-    -webkit-animation: ufo 10s infinite  linear;
-    -moz-animation: ufo 10s infinite  linear;
-}
-.ufo span:nth-child(5n+5) {
-    -webkit-animation-delay: 1.3s;
-    -moz-animation-delay: 1.3s;
-}
-.ufo span:nth-child(3n+10) {
+	background: blue;
+	background: url("../Images/ufo.png");
 
-    -webkit-animation-delay: 2.7s;
-    -moz-animation-delay: 2.7s;
+	-webkit-animation: ufo 10s infinite linear;
+	-moz-animation: ufo 10s infinite linear;
 }
-.ufo span:nth-child(3n+7) {
-
-    -webkit-animation-delay: 8s;
-    -moz-animation-delay: 8s;
+.ufo > span:nth-child(5n + 5) {
+	-webkit-animation-delay: 1.3s;
+	-moz-animation-delay: 1.3s;
+}
+.ufo > span:nth-child(3n + 10) {
+	-webkit-animation-delay: 2.7s;
+	-moz-animation-delay: 2.7s;
+}
+.ufo > span:nth-child(3n + 7) {
+	-webkit-animation-delay: 8s;
+	-moz-animation-delay: 8s;
 }
 @-webkit-keyframes ufo {
-  0% {
-    width: 80px;
-    height: 80px;
-    opacity: 1;
+	0% {
+		width: 80px;
+		height: 80px;
+		opacity: 1;
 
-	-webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-    width: 80px;
-    height: 80px;
-    opacity: 1;
+		-webkit-transform: translate(0, 0px) rotateZ(0deg);
+	}
+	75% {
+		width: 80px;
+		height: 80px;
+		opacity: 1;
 
-	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
-  }
-  100% {
-    width: 80px;
-    height: 80px;
-    opacity: 0;
+		-webkit-transform: translate(100px, 600px) rotateZ(270deg);
+	}
+	100% {
+		width: 80px;
+		height: 80px;
+		opacity: 0;
 
-	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
-  }
+		-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+	}
 }
 @-moz-keyframes ufo {
-  0% {
-    width: 80px;
-    height: 80px;
-    opacity: 1;
-    
-	-webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-    width: 80px;
-    height: 80px;
-    opacity: 1;
-   
-	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
-  }
-  100% {
-    width: 80px;
-    height: 80px;
-    opacity: 0;
-    
-	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
-  }
-}
+	0% {
+		width: 80px;
+		height: 80px;
+		opacity: 1;
+
+		-webkit-transform: translate(0, 0px) rotateZ(0deg);
+	}
+	75% {
+		width: 80px;
+		height: 80px;
+		opacity: 1;
+
+		-webkit-transform: translate(100px, 600px) rotateZ(270deg);
+	}
+	100% {
+		width: 80px;
+		height: 80px;
+		opacity: 0;
+
+		-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+	}
+}*/
 
 @media (max-width: 900px) {
 	body {
@@ -183,12 +180,12 @@ button {
 		display: flex;
 		padding-right: 400px;
 	}
-    #name {
-	    width: 150px;
-	    padding-left: 90px;
-     	padding-bottom: 40px;
-    	margin-top: 40px;
-    }
+	#name {
+		width: 150px;
+		padding-left: 90px;
+		padding-bottom: 40px;
+		margin-top: 40px;
+	}
 	h1 {
 		color: navy;
 		margin: 3% auto;
@@ -234,7 +231,6 @@ button {
 		margin-top: 50px;
 		margin-left: -120px;
 		padding-bottom: 30px;
-		
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16px bold;
 		border-radius: 25px;
@@ -243,7 +239,6 @@ button {
 		color: navy;
 		letter-spacing: 2px;
 		font-style: italic;
-		
 	}
 	#logo {
 		width: 100px;
@@ -260,53 +255,43 @@ button {
 	}
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (max-width: 576px) {
 	body {
-		background-image: url(../Images/opensky.jpg);
+		width: 100%;
+		grid-template-columns: 100%;
 	}
-	#profile-pic {}
-		
-    #name {
-		
-    }
-	h1 {
-		color: navy;
-		margin: 3% auto;
-		border-bottom: 2px solid #1940a9;
-		font: 27px bold;
-		text-align: center;
-	}
-	h2 {
-		color: navy;
-		margin: 3% auto;
-		font-size: 18px;
-		font-style: italic;
-		text-align: center;
-	}
-
-	
 	nav {
-		
-	}
-	nav > a {
-		margin: 0.5% 1% 3%;
-		width: 20%;
-		color: navy;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 6px bold;
-		border-radius: 25px;
-		background: lightgray;
-		padding: 10px;
+		display:flex;
+		flex-direction: row;
+		width: 300px;
+		height: 40px;
 		text-align: center;
-		border: 2px solid darkgrey;
+		text-align: justify;
+		margin-left: 65px;
+		margin-top: 20px;
+		padding-bottom: 5px;
+		font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+		font-size: 10px;
+		text-anchor: inherit;
+	}
+	
+	#name {
+		width:250px;
+		align-content: center;
+		margin-top: 20px;
+		margin-left: -25px;
+	}
+	.container-profilepic {
+		display: flex;
+		flex-direction: column;
+		margin-left: 30px;
 	}
 	button {
-		width: 160px;
-		height: 25px;
-		margin-top: 50px;
-		margin-left: -120px;
-		padding-bottom: 30px;
-		font-family: Arial, Helvetica, sans-serif;
+		width: 150px;
+		height: 15px;
+		margin-top: 10px;
+		margin-left: 5px;
+		padding-bottom: 45px;
 		font-size: 16px bold;
 		border-radius: 25px;
 		background: transparent;
@@ -314,20 +299,19 @@ button {
 		color: navy;
 		letter-spacing: 2px;
 		font-style: italic;
-		
 	}
 	#logo {
-		width: 100px;
-		padding-left: 82px;
-		margin-left: 8px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -180px;
+		margin-left: -15px;
 	}
 	.small-text {
+		position: relative;
 		display: flex;
 		flex-direction: row;
-		justify-content: right;
+		margin-left: 40px;
 		color: black;
 		font-size: 14px;
-		margin-left: 99px;
 	}
 }
-	
