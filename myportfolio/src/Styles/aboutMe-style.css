@@ -10,27 +10,27 @@ header {
 	text-align: center;
 	margin-left: 80px;
 	align-content: flex-end;
-	margin-top: -80px;
+	margin-top:-110px;
 	padding-bottom: 100px;
 }
 header > h1 {
-	font-size: 175px;
+	font-size: 195px;
 	font-family: "Satisfy", cursive;
 	transform: rotate(-15deg);
 	position: relative;
-	margin-bottom: 190px;
-	margin-left: 140px;
+	margin-top: -90px;
+	margin-left: 30px;
 }
 header > h3 {
-	padding-top: 50px;
+	padding-top: 40px;
 	font-size: 90px;
 	font-family: "Acme", sans-serif;
 }
 .photo {
 	z-index: auto;
 	position: relative;
-	width: 600px;
-	height: 440px;
+	width: 800px;
+	height: 650px;
 	background: url("../Images/ATXredo.png") no-repeat;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 	filter: grayscale(100%);
@@ -42,7 +42,8 @@ header > h3 {
 	transform: rotate(5deg);
 	float: right;
 	margin-left: 90px;
-	margin-right: -80px;
+	margin-right: -60px;
+	margin-top:  40px;
 }
 .photo:hover {
 	background: url("../Images/ATXredo.png") no-repeat;
@@ -58,29 +59,173 @@ header > h3 {
 	text-align: center;
 	margin-right: 50px;
 	margin-left: 60px;
-	margin-top: -30px;
+	margin-top: -350px;
 }
 h1 {
-	font-size: 70px;
+	font-size: 50px;
 	text-align: justify;
 	margin-left: 70px;
 }
 .mission > p {
+	margin-top: 20px;
 	font-size: 30px;
 	width: 700px;
 	height: 300px;
 }
 .sidenav {
+	margin-top: -100px;
 	padding-top: 10px;
 	background-color: silver;
-	font-size: 25px;
 	width: 300px;
 	height: auto;
 	margin-left: 30px;
 	float: right;
 }
 .sidenav > h4 {
+	font-size: 65px;
 	box-align: right;
 	text-align: right;
 	justify-content: center;
+}
+@media (max-width: 900px) {
+	body {
+		display: grid;
+		grid-auto-columns: 50% 50%;
+		margin-left: auto;
+	}
+	header {
+		display: flex;
+		font-size: 50px;
+		width: auto;
+		height: 50px;
+		text-align: center;
+		margin-left: 80px;
+		align-content: flex-end;
+		margin-top: -60px;
+		
+	}
+	header > h1 {
+		display: flex;
+		flex-wrap: row;
+		font-size: 160px;
+		font-family: "Satisfy", cursive;
+		transform: rotate(-15deg);
+		position: relative;
+		margin-top: 200px;
+		margin-left: -500px;
+	
+	}
+	header > h3 {
+		padding-top: 50px;
+		font-size: 60px;
+		font-family: "Acme", sans-serif;
+	}
+	.photo {
+		z-index: auto;
+		position: relative;
+		width: 400px;
+		height: 240px;
+		background: url("../Images/ATXredo.png") no-repeat;
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+		filter: grayscale(100%);
+		background-size: 100%;
+     	margin-top: 130px;
+		-ms-transform: skewY(170deg); /* IE 9 */
+		-webkit-transform: skewY(170deg); /* Safari 3-8 */
+		transform: skewY(170deg);
+		transform: rotate(5deg);
+		margin-right: -200px;
+		
+	}
+	.photo:hover {
+		background: url("../Images/ATXredo.png") no-repeat;
+		-webkit-filter: brightness(150%); /* Safari */
+		filter: brightness(150%);
+		background-size: 100%;
+	}
+	.mission {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		float: left;
+		text-align: center;
+		margin-right: 50px;
+		margin-left: 60px;
+		margin-top: -100px;
+	}
+	.mission > h1 {
+		font-size: 50px;
+	}
+	.mission > p {
+		margin-top: -40px;
+		font-size: 20px;
+		width: 400px;
+		height: auto;
+		margin-right: 30px;
+	}
+	.sidenav {
+		border-radius: 25%;
+		width:260px;
+		height: 480px;
+		text-align: justify;
+		justify-content: left;
+		font-size: 18px;
+		position: relative;
+		margin-left: 550px;
+		margin-top: -590px;
+		margin-right: auto;
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 580px) {
+	body {
+		width: 100%;
+		grid-template-columns: 100%;
+	}
+	header > h3 {
+		font-size: 35px; 
+		margin-top: 30px;
+	}
+	header > h1 {
+		font-size: 80px;
+		margin-left: -340px;
+		margin-top: 160px;
+	}
+	.photo {
+		z-index: auto;
+		position: relative;
+		width: 250px;
+		height: 140px;
+		background: url("../Images/ATXredo.png") no-repeat;
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+		filter: grayscale(100%);
+		background-size: 100%;
+     	margin-top: 10px;
+		-ms-transform: skewY(10deg); /* IE 9 */
+		-webkit-transform: skewY(10deg); /* Safari 3-8 */
+		transform: skewY(10deg);
+		transform: rotate(0deg);
+		margin-right: 75px;
+		
+	}
+	.photo:hover {
+		background: url("../Images/ATXredo.png") no-repeat;
+		-webkit-filter: brightness(150%); /* Safari */
+		filter: brightness(150%);
+		background-size: 100%;
+	}
+	.mission > h1 {
+		font-size: 30px;
+		margin-top: -40px;
+	}
+	.mission > p {
+		margin-top: -40px;
+		font-size: 20px;
+		width: 100%;
+		height: auto;
+		margin-right: auto;
+	}
+	.sidenav {
+		display:none;
+	}
 }
