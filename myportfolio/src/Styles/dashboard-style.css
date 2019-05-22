@@ -26,14 +26,30 @@ body {
 		". clock clock clock .";
 }
 #welcome {
-	width: 550px;
+	width: 350px;
 	height:100px;
 	grid-area: welcome;
-	font-size: 50px;
+	font-size: 80px;
 	margin-left: 20px;
 	margin-top: 70px;
 	text-align: center;
 	padding-top: 30px;
+	font-family: 'Slackey', cursive;
+	color: rgb(248, 152, 8);
+	
+
+  text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px magenta;
+  -ms-transform: skewY(150deg); /* IE 9 */
+  -webkit-transform: skewY(150deg); /* Safari */
+  transform: skewY(150deg);
+	
+}
+button {
+	background-image: url("../Images/location-Icon.png") no repeat;
+	background-size: 100%; 
+	width: 100px;
+	height: 100px;
+	font-size: 10px;
 }
 #date {
 	grid-area: date;

@@ -4,11 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="stylesheet" href="./Styles/reset.css">
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Pacifico"
-		/>
+		<link href="https://fonts.googleapis.com/css?family=Barrio|Eater|Fontdiner+Swanky|Freckle+Face|Frijole|Nosifer|Peralta|Slackey&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Freckle+Face|Hanalei+Fill|Luckiest+Guy|Sigmar+One&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./Styles/dashboard-style.css" />
 		<title>Dashboard</title>
 	</head>
@@ -17,6 +14,7 @@
 			<header>
 				<div class="greybox" id="welcome">Good Morning Sunshine!</div>
 			</header>
+			<button onclick="getlocation()" img src="/Images/location-Icon.png"> Location:</button>
 			<div class="greybox" id="date"><u>Today is:</u> Friday, March 22, 2021</div>
 			<div class="greybox" id="todolist">
 				<h2><u>Gitter Done List</h2></u>
@@ -31,7 +29,7 @@
 					<li><a href="text">Love and Hug Children</a></li>
 				</ul>
 			</div>
-			<div class="greybox" id="calculator">
+			<!---!><div class="greybox" id="calculator">
 				<form>
 					<input type="text" name="screen" id="screen" />
 					<br />
@@ -54,11 +52,12 @@
 					<button type="+">+</button>
 					<button type="=">=</button>
 					<button type="Clear">C</button>
-				</form>
+				</form><!!--->
 			</div>
 			<div class="greybox" id="clock">
 				<h2>You Got the Time? 12:34 pm</h2>
 			</div>
 		</div>
 	</body>
+	<script src="../src/scripts/dashboard.js"></script>
 </html>
