@@ -27,8 +27,8 @@ body {
     border-right: none;
 }  
 #player {   
-   padding:100px;
-   display: grid;
-   width: 250px;
-   justify-content: center;
+    padding:100px;
+    display: grid;
+    width: 250px;
+    justify-content: center;
 }    
