@@ -10,24 +10,29 @@
 	<body>
 		<Div class="choose">
 			<div id="player">
-				<button onclick="changeMarkerToX()" >Player 1  (X)</button>
-					<br/>
-					<button onclick="changeMarkerToO()">Player 2  (O)</button>
-					<br/>
-					<button onclick="Reset">Reset</button>
-				</div>
-			</Div>
+				<button onclick="changeMarkerToX()">Player 1 (X)</button>
+				<br />
+				<button onclick="changeMarkerToO()">Player 2 (O)</button>
+				<br />
+				<button onclick="Reset">Reset</button>
+			</div>
+		</Div>
 		<Div class="box">
-			<div class="item rightB bottomB"  id="box1"></Div>
-            <div class="item rightB bottomB" id="box2"></div>
-            <div class="item bottomB" id="box3"></div>
-            <div class="item rightB bottomB" id="box4"></div>
-            <div class="item rightB bottomB" id="box5"></div>
-            <div class="item bottomB" id="box6"></div>
-            <div class="item rightB" id="box7"></div>
-			<div class="item rightB" id="box8"></div>
-			<div class="item" id="box9"></div>
+			<div
+				class="item rightB bottomB"
+				id="box1"
+				onClick="placeMark('box1')"></div>
+			<div
+				class="item rightB bottomB"
+				id="box2"onClick="placeMark('box2')"></div>
+			<div class="item bottomB" id="box3" onClick="placeMark('box3')"></div>
+			<div class="item rightB bottomB" id="box4" onClick="placeMark('box4')"></div>
+			<div class="item rightB bottomB" id="box5" onClick="placeMark('box5')"></div>
+			<div class="item bottomB" id="box6" onClick="placeMark('box6')"></div>
+			<div class="item rightB" id="box7" onClick="placeMark('box7')"></div>
+			<div class="item rightB" id="box8" onClick="placeMark('box8')"></div>
+			<div class="item" id="box9" onClick="placeMark('box9')"></div>
 		</Div>
 	</body>
-	   <script src="scripts/TicTacToe.js"></script>  
+	<script src="scripts/TicTacToe.js"></script>
 </html>
