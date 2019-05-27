@@ -1,0 +1,104 @@
+body {
+  font-family: 'Dokdo', cursive;
+  }
+
+#listing {
+  display: block;
+  background-color: yellow;
+  border: 3px solid black;
+  border-radius: 5%;
+  width: 350px;
+  min-height: 500px;
+  height: auto;
+  box-shadow: 15px 15px 25px purple;
+  text-align: center;
+}
+
+#header {
+  font-size: 65px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+li {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:transparent;
+  color: #000;
+  font-size: 22px;
+  list-style-type: none;
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 3px;
+  font-family: 'Permanent Marker', cursive;
+ /* font-family: 'The Girl Next Door', cursive;*/
+  text-align: justify;
+}
+
+
+
+/*
+h1 {
+  color: white;
+  margin: 0px auto;
+  padding: 20px;
+  font-family: 'Dokdo', cursive;
+
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  list-style-type: none;
+  width: 20%;
+  margin: 0px auto;
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  background-color: #fff;
+  color: #666;
+  padding: 10px;
+  display: inline-block;
+  margin: 20px auto 20px auto;
+  width: 80%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.item {
+  background-color: #fff;
+  color: #000;
+}
+
+input[type='text'] {
+  font-size: 12px;
+  padding: 6px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+input[type='submit'] {
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+}
+
+#newItemButton {
+  display: none;
+}
+
+#itemField {
+  margin-top: 60px;
+  width: 10%;
+}
