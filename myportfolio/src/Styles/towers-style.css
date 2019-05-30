@@ -1,0 +1,41 @@
+body {
+    width: 1000px;
+    height: 1000px;
+    background-color: goldenrod;
+}
+.disks {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+.disks #barA {
+    width: 90px;
+    height: 40px;
+    border-radius: 10%;
+    background-color: red;
+    border: 2px solid black;
+    justify-content: center;
+    vertical-align: top;
+}
+.disks #barB {
+    width: 180px;
+    height: 40px;
+    border-radius: 10%;
+    background-color: green;
+    border: 2px solid black;
+    vertical-align: top;
+}
+.disks #barC {
+    width: 270px;
+    height: 40px;
+    border-radius: 10%;
+    background-color:blue;
+    border: 2px solid black;
+    vertical-align: top;
+}
+.pegs {
+    margin-bottom: 100px;
+    background-color: black;
+    width: 900px;
+    width: 15px;
+}
