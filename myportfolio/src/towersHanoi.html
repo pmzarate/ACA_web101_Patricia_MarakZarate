@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One|Dokdo|Joti+One|Ravi+Prakash&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/Styles/towers-style.css">
     <title>Towers of Hanoi</title>
 </head>
 <body>
-    <div><button id="start-game" onclick="">Start Game</button>
+    <div><button id="start-game" style=" width: 120px; height: 40px"; onclick="hanoi()">Start Game</button>
     </div>
     <div class="disks">
-       <div id="barA"></div>
-       <div id="barB"></div>
-       <div id="barC"></div>  
+       <div id="barA" onclick="hanoi()"></div>
+       <div id="barB" onclick="hanoi()"></div>
+       <div id="barC" onclick="hanoi()"></div>  
     </div> 
-    <div class="pegs">
-        <div id="peg-start"></div>
-        <div id="peg-mid"></div>
-        <div id="peg-end"></div>
+    <div class="pegs" id="peg-box">
+        <div id="peg1" ></div>
+        <div id="peg2"></div>
+        <div id="peg3"></div>
     </div>
+    <h1>Towers of Hanoi</h1>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js"></script>
+    <script src="../src/scripts/towers.js"></script>
 </body>
 </html>
