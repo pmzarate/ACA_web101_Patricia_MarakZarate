@@ -7,73 +7,80 @@ body {
     margin-left:120px;
     margin-top: 50px;
 }
+
 .pegs {
     position: absolute;
-    margin-top: 400px;
-    background-color: black;
+    /*display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;*/
     width: 1000px;
-    height: 15px;
-    margin-left: 160px;
+    height: 400px;
     z-index: -1;
+    border-bottom: 15px solid black;
 }
-
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
 .pegs #peg1 {
-    position: absolute;
+    /*position: absolute;*/
     width: 20px;
     height:300px;
     background-color: black;
-    margin-top:-300px;
-    margin-left: 180px;
+    z-index: 10;
+    display: flex;
+   /* flex-direction: column;*/
+    align-items: center;
+    transform: translate(-50%, -50%);
 }
 .pegs #peg2 {
-    position: absolute;
+   /* position: absolute;*/
     width: 20px;
     height:300px;
     background-color: black;
-    margin-top:-300px;
-    margin-left:490px;
+    z-index: 10;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    transform: translate(-50%, -50%);
 }
 .pegs #peg3 {
-    position: absolute;
+    /*position: absolute;*/
     width: 20px;
     height:300px;
     background-color: black;
-    margin-top:-300px;
-    margin-left: 800px;
+    z-index: 10;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    transform: translate(-50%, -50%);
 }
-.disks {
-    display: inline-flex;
-    flex-direction: column;
+.wrapper {
+   
 }
-.disks #barA {
+#barA {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;*
     width: 80px;
     height: 40px;
     border-radius: 10%;
     background-color: red;
     border: 2px solid black;
-    position: absolute;
-    margin-top: 279px;
-    margin-left: 309px;
 }
-.disks #barB {
+#barB {
     width: 160px;
     height: 40px;
     border-radius: 10%;
     background-color: green;
     border: 2px solid black;
-    position: absolute;
-    margin-top: 319px;
-    margin-left: 269px;
 }
-.disks #barC {
+#barC {
     width: 240px;
     height: 40px;
     border-radius: 10%;
     background-color:blue;
     border: 2px solid black;
-    position: absolute;
-    margin-top:360px;
-    margin-left:229px;
 }
 h1 {
     font-size: 40px;

@@ -1,9 +1,9 @@
 'use strict';
 
 $(document).ready(function() {
-  let = null;
+  let $block = null;
   
-  $('[disks]').click(function() {
+  $('[data-peg]').click(function() {
     if ($block) {
       $(this).append($block);
       $block = null;
