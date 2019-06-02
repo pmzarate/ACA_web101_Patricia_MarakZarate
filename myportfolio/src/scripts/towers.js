@@ -3,7 +3,7 @@
 $(document).ready(function() {
   let $block = null;
   
-  $('[data-peg]').click(function() {
+  $('[data-row]').click(function() {
     if ($block) {
       $(this).append($block);
       $block = null;

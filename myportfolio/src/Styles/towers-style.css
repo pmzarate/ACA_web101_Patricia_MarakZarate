@@ -7,84 +7,46 @@ body {
     margin-left:120px;
     margin-top: 50px;
 }
-
-.pegs {
-    position: absolute;
-    /*display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;*/
-    width: 1000px;
-    height: 400px;
-    z-index: -1;
-    border-bottom: 15px solid black;
-}
-.wrapper {
+[data-row] {
     display: flex;
-    justify-content: space-evenly;
-}
-.pegs #peg1 {
-    /*position: absolute;*/
-    width: 20px;
-    height:300px;
-    background-color: black;
-    z-index: 10;
-    display: flex;
-   /* flex-direction: column;*/
+    justify-content: flex-start;
     align-items: center;
-    transform: translate(-50%, -50%);
-}
-.pegs #peg2 {
-   /* position: absolute;*/
-    width: 20px;
-    height:300px;
-    background-color: black;
-    z-index: 10;
-    display: flex;
-    /*flex-direction: column;*/
-    align-items: center;
-    transform: translate(-50%, -50%);
-}
-.pegs #peg3 {
-    /*position: absolute;*/
-    width: 20px;
-    height:300px;
-    background-color: black;
-    z-index: 10;
-    display: flex;
-    /*flex-direction: column;*/
-    align-items: center;
-    transform: translate(-50%, -50%);
-}
-.wrapper {
+    height: 34px;
+    margin: 25px;
    
-}
-#barA {
-    display: flex;
-    justify-content:center;
-    flex-direction: column;*
-    width: 80px;
-    height: 40px;
-    border-radius: 10%;
-    background-color: red;
-    border: 2px solid black;
-}
-#barB {
-    width: 160px;
-    height: 40px;
-    border-radius: 10%;
+  }
+  
+  [data-row].red {
+    background-color: #f6c5c5;
+  }
+  
+  [data-row].green {
+    background-color: #baf6ba;
+  }
+  
+  [data-row].blue {
+    background-color: lightskyblue;
+  }
+  
+  [data-color] {
+    width: 25px;
+    float: left;
+  }
+  
+  [data-color="blue"] {
+    height: 33px;
+    background-color: blue;
+  }
+  
+  [data-color="green"] {
+    height: 33px;
     background-color: green;
-    border: 2px solid black;
-}
-#barC {
-    width: 240px;
-    height: 40px;
-    border-radius: 10%;
-    background-color:blue;
-    border: 2px solid black;
-}
-h1 {
-    font-size: 40px;
+  }
+  
+  [data-color="red"] {
+    height: 33px;
+    background-color: red;
+  }
+  h1 {
     font-family: 'Joti One', cursive;
-    margin-top: 460px;
-    margin-left: 500px;
-}
+  }

@@ -11,21 +11,13 @@
 <body>
     <div><button id="start-game" style=" width: 120px; height: 40px">Start Game</button>
     </div>
-    
-     <div class="pegs" id="peg-box">
-         <div class="wrapper">
-                <div data-peg id="peg1" >        
-                <div class="disk" id="barA"></div>
-                <div class="disk" id="barB"></div>
-                <div class="disk"  id="barC"></div>  
-               </div>
-            </div>
-          <div class="wrapper">
-              <div data-peg id="peg2"></div>
-          </div>
-            <div class="wrapper">
-                 <div data-peg id="peg3"></div>
-            </div>
+    <div data-row class="red"></div>
+    <div data-row class="green"></div>
+    <div data-row class="blue"></div>
+    <div data-row>
+        <div data-color="red"></div>
+      <div data-color="green"></div>
+      <div data-color="blue"></div>
     </div>
     <h1>Towers of Hanoi</h1>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js"></script>
