@@ -1,52 +1,65 @@
 body {
     width: 1000px;
-    height: 500px;
+    height: 1000px;
     background-color: goldenrod;
 }
 #start-game {
     margin-left:120px;
     margin-top: 50px;
 }
+#rows {
+  display:flex;
+  
+}
 [data-row] {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 34px;
-    margin: 25px;
-   
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
   
-  [data-row].red {
-    background-color: #f6c5c5;
-  }
+}
+
+[data-row].red {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(238, 170, 170);
   
-  [data-row].green {
-    background-color: #baf6ba;
-  }
-  
-  [data-row].blue {
-    background-color: lightskyblue;
-  }
-  
-  [data-color] {
-    width: 25px;
-    float: left;
-  }
-  
-  [data-color="blue"] {
-    height: 33px;
-    background-color: blue;
-  }
-  
-  [data-color="green"] {
-    height: 33px;
-    background-color: green;
-  }
-  
-  [data-color="red"] {
-    height: 33px;
-    background-color: red;
-  }
-  h1 {
+
+}
+[data-row].green {
+  width: 250px;
+  height: 250px;
+  background-color: lightgreen;
+ 
+}
+[data-row].blue {
+  width: 250px;
+  height: 250px;
+  background-color: lightskyblue;
+ 
+}
+[data-color] {
+ 
+ 
+}
+
+[data-color="red"] {
+  width: 50px;
+  height: 30px;
+  background-color: red;
+}
+[data-color="green"] {
+  width: 100px;
+  height: 30px;
+  background-color: green;
+}
+[data-color="blue"] {
+  width:150px;
+  height: 30px;
+  background-color: blue;
+}
+h1 {
     font-family: 'Joti One', cursive;
-  }
+    text-align: center;
+}
