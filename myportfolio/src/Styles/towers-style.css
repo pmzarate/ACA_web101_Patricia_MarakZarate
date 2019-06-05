@@ -23,21 +23,26 @@ body {
 [data-row].red {
   width: 250px;
   height: 250px;
-  background-color: rgb(238, 170, 170);
+  background-color: transparent;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
   
 
 }
 [data-row].green {
   width: 250px;
   height: 250px;
-  background-color: lightgreen;
+  background-color:transparent;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
  
 }
 [data-row].blue {
   width: 250px;
   height: 250px;
-  background-color: lightskyblue;
- 
+  background-color:transparent;
+  border-bottom: 5px solid black;
+  
 }
 [data-color] {
  
