@@ -4,61 +4,145 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link href="https://fonts.googleapis.com/css?family=Barrio|Eater|Fontdiner+Swanky|Freckle+Face|Frijole|Nosifer|Peralta|Slackey&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Freckle+Face|Hanalei+Fill|Luckiest+Guy|Sigmar+One&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="./Styles/dashboard-style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Permanent+Marker|The+Girl+Next+Door&display=swap" rel="stylesheet">
+		<link href="./Styles/dashboard-style.css"rel="stylesheet">
 		<title>Dashboard</title>
 	</head>
 	<body>
+		<Div class="announce">
+			<marquee width="100%" direction="across">
+                This is sample scrolling text.
+			</marquee>
+		</Div>	
 		<div class="container">
 			<header>
-				<div class="greybox" id="welcome">Good Morning Sunshine!</div>
+				<div id="welcome">GOOD MORNING SUNSHINE!</div>
 			</header>
-			<button onclick="getLocation()" id="demo" img src="/Images/location-Icon.png"> Location:</button>
-			<div class="greybox" id="date"><u>Today is:</u> Friday, March 22, 2021</div>
-			<div class="greybox" id="todolist">
-				<h2><u>Gitter Done List</h2></u>
-				<ul>
-					Add it to the List:
-					<input type="text" name="screen" id="screen" />
-					<li><a href="text">Clean Out Grease Trap</a></li>
-					<li><a href="text">Chop Wood</a></li>
-					<li><a href="text">Excavate for Fallout Shelter</a></li>
-					<li><a href="text">Go to Spa</a></li>
-					<li><a href="text">Get Manicure/ Pedicure</a></li>
-					<li><a href="text">Love and Hug Children</a></li>
-				</ul>
-			</div>
-			<!---!><div class="greybox" id="calculator">
-				<form>
-					<input type="text" name="screen" id="screen" />
-					<br />
-					<button type="7">7</button>
-					<button type="8">8</button>
-					<button type="9">9</button>
-					<button type="*">*</button>
-					<br />
-					<button type="4">4</button>
-					<button type="5">5</button>
-					<button type="6">6</button>
-					<button type="/">/</button>
-					<br />
-					<button type="1">1</button>
-					<button type="2">2</button>
-					<button type="3">3</button>
-					<button type="-">-</button>
-					<br />
-					<button type="0">0</button>
-					<button type="+">+</button>
-					<button type="=">=</button>
-					<button type="Clear">C</button>
-				</form><!!--->
-			</div>
-			<div class="greybox" id="clock">
-				<h2>You Got the Time? 12:34 pm</h2>
-			</div>
+				<button onclick="getLocation()" id="demo" img src="../Images/location-Icon.png"> Location:</button>
+        <div id="listing">
+			<h1 id="header">To Do List</h1>
+                <form id="newItemForm">
+			        <input type="text" id="itemField" placeholder="Item"/>
+			        <input type="submit" id="add" value="add new task" />
+			    </form>
+			<ul style="list-style-type: none;">
+			<li class="item"></li>
+		    </ul>
 		</div>
-		
-	</body>
+		<div class="calculator">
+		    <div>0</div>
+			<div>C</div>
+			<div>=</div>
+	   		<div>+</div>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>-</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>*</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>/</div>
+			<form id="calculator">
+				<textarea rows="2" cols="25px" name="comment" form="usrform">
+				</textarea>
+			</form>
+		</div>
+        <div class="container-calendar">
+	        <div class="calendar">	     
+				<header>			
+				<h2>MARCH</h2>
+					<a class="btn-prev fontawesome-angle-left" href="#"></a>
+				<a class="btn-next fontawesome-angle-right" href="#"></a>
+				</header>
+        <table>
+			<thead>
+				<tr>
+					<td>Mo</td>
+				    <td>Tu</td>
+					<td class="current-day ">We</td>
+					<td>Th</td>
+					<td>Fr</td>
+					<td>Sa</td>
+					<td>Su</td>
+		     		</tr>
+			</thead>
+				<tbody>
+					<tr>
+					<td class="prev-month">26</td>
+					<td class="prev-month">27</td>
+					<td class="prev-month">28</td>
+					<td class="prev-month">29</td>
+					<td class="prev-month">30</td>
+					<td class="prev-month">31</td>
+					<td class="event">1</td>
+					</tr>
+					<tr>
+					<td class="event">2</td>
+					<td class="event">3</td>
+					<td class="event">4</td>
+					<td class="event" >5</td>
+					<td class="event" >6</td>
+					<td class="event" >7</td>
+					<td class="event">8</td>
+					</tr>
+					<tr>
+					<td class="event">9</td>
+					<td class="event">10</td>
+					<td class="event">11</td>
+					<td class="event" >12</td>
+					<td class="event" >13</td>
+					<td class="event" >14</td>
+	            	<td class="event">15</td>
+					</tr>
+				    <tr>
+					<td class="event" >16</td>
+					<td class="event" >17</td>
+					<td class="event">18</td>
+					<td class="event" >19</td>
+					<td class="event" >20</td>
+				    <td class="event">21</td>
+					<td class="event">22</td>
+					</tr>
+					<tr>
+					<td class="current-day">23</td>
+					<td class="event" >24</td>
+					<td class="event" >25</td>
+					<td class="event" >26</td>
+		    		<td class="event">27</td>
+					<td class="event">28</td>
+					<td class="event">29</td>
+					</tr>
+					<tr>
+					<td class="event">30</td>
+					<td class="next-month">1</td>
+			    	<td class="next-month">2</td>
+					<td class="next-month">3</td>
+					<td class="next-month">4</td>
+				    <td class="next-month">5</td>
+					<td class="next-month">6</td>
+					</tr>
+				</tbody>
+		</table>
+			</div> 
+		</div><!-- end calendar -->
+				<div id = "clock-rim">
+						<div id = "clock-face">
+						<div id = "notch-container"></div>
+						<!-- ><div id = "brand">HTML<br/>clock</div> -->
+						<div id = "hour"></div>
+						<div id = "minute"></div>
+						<div id = "second"></div>
+						<div id = "center"></div>
+			         	</div>
+				</div>
+		</div>
+			
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+	<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/canvas-pointer.js?v=20150516"></script>
 	<script src="../src/scripts/dashboard.js"></script>
+</body>
 </html>
