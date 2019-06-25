@@ -8,7 +8,7 @@
 .container:hover .Odd {
     width: 100px;
     height: 100px;
-    transition: all 2s;
+    transition: all 1s;
     transform: translate(100px) rotate(360deg);
 }
 .container:hover .Even {

@@ -13,12 +13,22 @@
 			<marquee width="100%" direction="across">
                 This is sample scrolling text.
 			</marquee>
-		</Div>	
-		<div class="container">
-			<header>
-				<div id="welcome">GOOD MORNING SUNSHINE!</div>
-			</header>
-				<button onclick="getLocation()" id="demo" img src="../Images/location-Icon.png"> Location:</button>
+		</Div>
+		<header>
+			<div id="welcome">GOOD MORNING SUNSHINE!</div>
+		</header>
+		<div class="container-all">
+			<button onclick="getLocation()" id="demo" img src="../Images/location-Icon.png" alt id ="location"> Location:</button>
+			<div id = "clock-rim">
+				<div id = "clock-face">
+					<div id = "notch-container"></div>
+					<!-- ><div id = "brand">HTML<br/>clock</div> -->
+					<div id = "hour"></div>
+					<div id = "minute"></div>
+					<div id = "second"></div>
+					<div id = "center"></div>
+				</div>
+			</div>
         <div id="listing">
 			<h1 id="header">To Do List</h1>
                 <form id="newItemForm">
@@ -47,7 +57,7 @@
 			<div>9</div>
 			<div>/</div>
 			<form id="calculator">
-				<textarea rows="2" cols="25px" name="comment" form="usrform">
+				<textarea rows="1" cols="18px" name="comment" form="usrform">
 				</textarea>
 			</form>
 		</div>
@@ -68,7 +78,7 @@
 					<td>Fr</td>
 					<td>Sa</td>
 					<td>Su</td>
-		     		</tr>
+		     	</tr>
 			</thead>
 				<tbody>
 					<tr>
@@ -129,16 +139,7 @@
 		</table>
 			</div> 
 		</div><!-- end calendar -->
-				<div id = "clock-rim">
-						<div id = "clock-face">
-						<div id = "notch-container"></div>
-						<!-- ><div id = "brand">HTML<br/>clock</div> -->
-						<div id = "hour"></div>
-						<div id = "minute"></div>
-						<div id = "second"></div>
-						<div id = "center"></div>
-			         	</div>
-				</div>
+				
 		</div>
 			
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
